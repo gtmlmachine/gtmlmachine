@@ -7,10 +7,8 @@
     <title>Home</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
-
     <!-- All css files are included here -->
     <!-- Bootstrap fremwork main css -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -24,9 +22,6 @@
     <link rel="stylesheet" href="css/responsive.css">
     <!-- User style -->
     <link rel="stylesheet" href="css/custom.css">
-
-
-
     <!-- Modernizr JS -->
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
@@ -107,90 +102,59 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-sm-4 col-xs-6">
-                            <div class="header-top-right">
-                                <span class="mr-20"><a href="#"><img alt="" src="images/header/search-icon.png"></a></span>
-                                <span><input type="text" class="pl-10" placeholder="Search..."></span>
-                            </div>
-                        </div>
+                       
                     </div>
                 </div>
             </div>
             <div class="header-bottom">
                 <div class="container">
                     <div class="row header-middle-content">
-                        <div class="col-md-5 col-sm-4 hidden-xs">
+                        <div class="col-md-5 col-sm-4 hidden-xs" style="margin-bottom: 30px">
+                            <div class="service-inner mt-10">
+                                <span class="service-img b-img">
+                                    <img alt="" src="images/email.png">
+                                </span>
+                                <span class="service-content ml-15"><strong>GTMLmachine@Gmail.com</strong><br>Feedback within 24h</span>
+                            </div>
                             <div class="service-inner mt-10">
                                 <span class="service-img b-img">
                                     <img alt="" src="images/service.png">
                                 </span>
-                                <span class="service-content ml-15"><strong>+88 (012) 564 979 56</strong><br>We are open 9 am - 10pm</span>
+                                <span class="service-content ml-15"><strong>+86 132 7500 0508</strong><br>6 PM–12 AM (UTC+8)</span>
                             </div>
                         </div>
                         <div class="col-md-2 col-sm-4 col-xs-12">
                             <div class="header-logo text-center">
-                                <a href="index.html"><img alt="" src="images/logo.png"></a>
+                                <a href="index.html"><img class="scaled-image" alt="" src="images/logo.png"></a>
                             </div>
                         </div>
-                        <div class="col-md-offset-0 col-md-5 col-sm-offset-0 col-sm-4 col-xs-offset-3 col-xs-6">
+                        <!-- Add id attributes to the elements to be updated -->
+                        <div class="col-md-offset-0 col-md-5 col-sm-offset-0 col-sm-4 col-xs-offset-3 col-xs-6" style="z-index: 99">
                             <div class="shopping-cart">
-                                <a href="#">
-                                    <span class="shopping-cart-control">
-                                        <img alt="" src="images/shop.png">
-                                    </span>
-                                    <span class="cart-size-value"><strong>Cart(3)</strong><br>$250</span>
-                                </a>
-                                <ul class="shopping-cart-down box-shadow white-bg">
-                                    <li class="media">
-                                        <a href="#"><img alt="" src="images/cart/1.jpg"></a>
-                                        <div class="cart-item-wrapper">
-                                            <a href="#">Zelletria ostma</a>
-                                            <span class="quantity">
-                                                <span class="amount">$195</span>
-                                                 x 2
-                                            </span>
-                                            <a title="Remove this item" class="remove" href="#">
-                                                <i class="fa fa-trash-o"></i>
-                                            </a>
-                                        </div>
+                                <ul class="header-top-style pl-10" style="scale: 1.5">
+                                    <li>
+                                        <span class="mr-10"><img id="selected-language-img" style="scale: 0.4;margin-right: -20px" alt="" src="images/header/language/english.jpg"></span>
+                                        <a href="#"><span id="selected-language-text" class="mr-10" style="color: #0b0b0b">English</span><i class="fa fa-angle-down"></i></a>
+                                        <ul class="ul-style language box-shadow white-bg">
+                                            <li style="margin-top: -10px;margin-left: -28px"><a href="#" onclick="changeLanguage('english.jpg', 'English')"><img alt="" style="scale: 0.4;margin-left: -5px" src="images/header/language/english.jpg"><span style="margin-left: -10px">English</span></a></li>
+                                            <li style="margin-top: -15px;margin-left: -28px"><a href="#" onclick="changeLanguage('china.jpg', 'Chinese')"><img alt="" style="scale: 0.4;margin-left: -5px" src="images/header/language/china.jpg"><span style="margin-left: -10px">Chinese</span></a></li>
+<!--                                            <li style="margin-top: -15px;margin-left: -28px"><a href="#" onclick="changeLanguage('indonesia.jpg', 'Indonesian')"><img alt="" style="scale: 0.4;margin-left: -5px" src="images/header/language/indonesia.jpg"><span style="margin-left: -10px">Indonesian</span></a></li>-->
+<!--                                            <li style="margin-top: -15px;margin-left: -28px"><a href="#" onclick="changeLanguage('japan.jpg', 'Japanese')"><img alt="" style="scale: 0.4;margin-left: -5px" src="images/header/language/japan.jpg"><span style="margin-left: -10px">Japanese</span></a></li>-->
+<!--                                            <li style="margin-top: -15px;margin-left: -28px"><a href="#" onclick="changeLanguage('korean.jpg', 'Korean')"><img alt="" style="scale: 0.4;margin-left: -5px" src="images/header/language/korean.jpg"><span style="margin-left: -10px">Korean</span></a></li>-->
+<!--                                            <li style="margin-top: -15px;margin-left: -28px"><a href="#" onclick="changeLanguage('vietnam.jpg', 'Vietnamese')"><img alt="" style="scale: 0.4;margin-left: -5px" src="images/header/language/vietnam.jpg"><span style="margin-left: -10px">Vietnamese</span></a></li>-->
+<!--                                            <li style="margin-top: -15px;margin-left: -28px"><a href="#" onclick="changeLanguage('马来西亚.jpg', 'Malay')"><img alt="" style="scale: 0.4;margin-left: -5px" src="images/header/language/马来西亚.jpg"><span style="margin-left: -10px">Malay</span></a></li>-->
+<!--                                            <li style="margin-top: -15px;margin-left: -28px"><a href="#" onclick="changeLanguage('thailand.jpg', 'Thai')"><img alt="" style="scale: 0.4;margin-left: -5px" src="images/header/language/thailand.jpg"><span style="margin-left: -10px">Thai</span></a></li>-->
+<!--                                            <li style="margin-top: -15px;margin-left: -28px"><a href="#" onclick="changeLanguage('spain.jpg', 'Spanish')"><img alt="" style="scale: 0.4;margin-left: -5px" src="images/header/language/spain.jpg"><span style="margin-left: -10px">Spanish</span></a></li>-->
+<!--                                            <li style="margin-top: -15px;margin-left: -28px"><a href="#" onclick="changeLanguage('french.jpg', 'French')"><img alt="" style="scale: 0.4;margin-left: -5px" src="images/header/language/french.jpg"><span style="margin-left: -10px">French</span></a></li>-->
+<!--                                            <li style="margin-top: -15px;margin-left: -28px"><a href="#" onclick="changeLanguage('germany.jpg', 'German')"><img alt="" style="scale: 0.4;margin-left: -5px" src="images/header/language/germany.jpg"><span style="margin-left: -10px">German</span></a></li>-->
+<!--                                            <li style="margin-top: -15px;margin-left: -28px"><a href="#" onclick="changeLanguage('italy.jpg', 'Italian')"><img alt="" style="scale: 0.4;margin-left: -5px" src="images/header/language/italy.jpg"><span style="margin-left: -10px">Italian</span></a></li>-->
+<!--                                            <li style="margin-top: -15px;margin-left: -28px"><a href="#" onclick="changeLanguage('Russia.jpg', 'Russian')"><img alt="" style="scale: 0.4;margin-left: -5px" src="images/header/language/Russia.jpg"><span style="margin-left: -10px">Russian</span></a></li>-->
+                                        </ul>
                                     </li>
-                                    <li class="media">
-                                        <a href="#"><img alt="" src="images/cart/2.jpg"></a>
-                                        <div class="cart-item-wrapper">
-                                            <a href="#">Letria postma</a>
-                                            <span class="quantity">
-                                                <span class="amount">$145</span>
-                                                 x 1
-                                            </span>
-                                            <a title="Remove this item" class="remove" href="#">
-                                                <i class="fa fa-trash-o"></i>
-                                            </a>
-                                        </div>
-                                    </li>
-                                    <li class="media">
-                                        <a href="#"><img alt="" src="images/cart/3.jpg"></a>
-                                        <div class="cart-item-wrapper">
-                                            <a href="#">Montria jastma</a>
-                                            <span class="quantity">
-                                                <span class="amount">$155</span>
-                                                 x 2
-                                            </span>
-                                            <a title="Remove this item" class="remove" href="#">
-                                                <i class="fa fa-trash-o"></i>
-                                            </a>
-                                        </div>
-                                    </li>
-                                    <li class="media">
-                                        <span class="total-title pull-left">Sub Total</span>
-                                        <span class="total pull-right">$845</span>
-                                    </li>
-                                    <li class="media">
-                                        <a class="cart-btn" href="#">VIEW CART</a>
-                                        <a class="cart-btn" href="#">CHECKOUT</a>
-                                    </li>
-                                </ul>                           
+                                </ul>
                             </div>
                         </div>
+
                         <nav class="primary-menu">
                             <ul class="header-top-style text-uppercase">
                                 <li><a href="index.html">home</a></li>
@@ -229,11 +193,13 @@
         </header>
         <!-- End of header area -->
         <!-- Start of slider area -->
-        <section class="slider-container">
+        <section class="slider-container" style="margin-top: -400px">
             <!-- Slider Image -->
             <div id="mainSlider" class="nivoSlider slider-image">
                 <img src="images/slider/1.jpg" alt="main slider" title="#htmlcaption1">
                 <img src="images/slider/2.jpg" alt="main slider" title="#htmlcaption2">
+                <img src="images/slider/3.jpg" alt="main slider" title="#htmlcaption3">
+                <img src="images/slider/4.jpg" alt="main slider" title="#htmlcaption4">
             </div>
             <!-- Slider Caption 1 -->
             <div id="htmlcaption1" class="nivo-html-caption slider-caption-1">
@@ -241,22 +207,22 @@
                 <div class="container slider-height">
                     <div class="row slider-height">
                         <div class="col-xs-offset-6 col-xs-6 slider-height">
-                            <div class="slide-text">
-                                <div class="middle-text">
-                                    <div class="cap-dec text-black text-uppercase wow fadeInDown" data-wow-duration="0.9s" data-wow-delay="0s">
-                                        <h3>TRENDY DRESS COLLETIONS</h3>
-                                    </div>  
-                                    <div class="cap-title text-black text-uppercase wow fadeInDown" data-wow-duration="1.5s" data-wow-delay="0.5s">
-                                        <h2>FOR WOMEN - 2018</h2>
-                                    </div>  
-                                    <div class="cap-para wow fadeInDown" data-wow-duration="2s" data-wow-delay="1s">
-                                        <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat  vel illum dolore eu feugiat nulla facilisis at vero eros.</p>
-                                    </div>
-                                    <div class="cap-shop wow text-uppercase fadeInDown" data-wow-duration="2.5s" data-wow-delay="1.5s">
-                                        <a href="#">Shop now</a>
-                                    </div>  
-                                </div>  
-                            </div>
+<!--                            <div class="slide-text">-->
+<!--                                <div class="middle-text">-->
+<!--                                    <div class="cap-dec text-black text-uppercase wow fadeInDown" data-wow-duration="0.9s" data-wow-delay="0s">-->
+<!--                                        <h3>TRENDY DRESS COLLETIONS</h3>-->
+<!--                                    </div>  -->
+<!--                                    <div class="cap-title text-black text-uppercase wow fadeInDown" data-wow-duration="1.5s" data-wow-delay="0.5s">-->
+<!--                                        <h2>FOR WOMEN - 2018</h2>-->
+<!--                                    </div>  -->
+<!--                                    <div class="cap-para wow fadeInDown" data-wow-duration="2s" data-wow-delay="1s">-->
+<!--                                        <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat  vel illum dolore eu feugiat nulla facilisis at vero eros.</p>-->
+<!--                                    </div>-->
+<!--                                    <div class="cap-shop wow text-uppercase fadeInDown" data-wow-duration="2.5s" data-wow-delay="1.5s">-->
+<!--                                        <a href="#">Shop now</a>-->
+<!--                                    </div>  -->
+<!--                                </div>  -->
+<!--                            </div>-->
                         </div>
                     </div>
                 </div>                      
@@ -2177,7 +2143,7 @@
                     <div class="row">
                         <div class="col-md-4 col-sm-6 col-xs-12">
                             <div class="copyright">
-                                <p>Copyright &copy; 2018.Company name All rights reserved.<a target="_blank" href="#">技术公司</a></p>
+                                <p>Copyright &copy; 2024.Company name All rights reserved.<a target="_blank" href="#">技术公司</a></p>
                             </div>
                         </div>
                         <div class="col-md-5 hidden-sm hidden-xs">
@@ -2214,6 +2180,13 @@
     <!-- Main js file that contents all jQuery plugins activation. -->
     <script src="js/main.js"></script>
 
+    <!-- JavaScript function to handle the language change -->
+    <script>
+        function changeLanguage(image, text) {
+            document.getElementById('selected-language-img').src = 'images/header/language/' + image;
+            document.getElementById('selected-language-text').textContent = text;
+        }
+    </script>
 </body>
 
 </html>
